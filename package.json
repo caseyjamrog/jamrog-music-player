@@ -1,0 +1,27 @@
+{
+  "name": "jamrog-music-player-server",
+  "version": "1.0.0",
+  "description": "Back end node application for Jamrog Music Player",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "serve -s client/build",
+    "prod": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "concurrently": "^7.2.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "serve": "^13.0.2"
+  },
+  "type": "module"
+}

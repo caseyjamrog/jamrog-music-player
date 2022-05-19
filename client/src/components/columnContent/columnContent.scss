@@ -1,0 +1,107 @@
+.tracklist {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-y: auto;
+    height: 90%;
+    margin-bottom: .5rem;
+}
+
+.recommendation {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-y: hidden;
+    height: 100%;
+    flex-direction: row;
+    .track {
+        height: 65px;
+        padding: 1rem;
+        margin: .5rem 0;
+        .thumbnail {
+            height: 50px;
+            width: 50px;
+        }
+        figcaption {
+            // display: none;
+        }
+        .buttons {
+            font-size: 14px;
+        }
+    }
+    .buttons {
+        height: 65px;
+    }
+}
+
+.now-playing {
+
+    .track {
+        // height: 75%;
+
+        .thumbnail {
+            // height: 150px;
+            // width: 150px;
+        }
+        figcaption {
+            align-items: flex-end;
+            width: 75%;
+        }
+    }
+    .buttons {
+        height: 25%;
+    }
+}
+
+.buttons {
+    width: 100%;
+    height: 100px;
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            // width: 50px;
+            // height: 50px;
+            padding: 1rem;
+            margin: .5rem;
+            background-color: #0f7de4;
+            color: #fff;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            &:hover {
+                background-color: goldenrod;
+            }
+
+            &:not(.icon-button) {
+                border-radius: 5px;
+                padding: .5rem;
+
+                &:hover {
+
+                }
+            }
+        }
+}
+
+.modifiers {
+    width: 100%;
+    height: 40%;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    // font-weight: 500;
+    .buttons {
+        justify-content: center;
+        button {
+            font-size: 28px;
+        }
+    }
+}
